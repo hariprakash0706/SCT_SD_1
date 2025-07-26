@@ -1,1 +1,46 @@
-creates tempconvert.txt
+import java.util.Scanner;
+
+public class TemperatureConversion {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double inputTemp;
+        int choice;
+
+        System.out.println(" Temperature Converter");
+        System.out.println("1. Celsius to Fahrenheit and Kelvin");
+        System.out.println("2. Fahrenheit to Celsius and Kelvin");
+        System.out.println("3. Kelvin to Celsius and Fahrenheit");
+        System.out.print("Enter your choice (1-3): ");
+        choice = scanner.nextInt();
+
+        switch (choice) {
+            case 1:
+                System.out.print("Enter temperature in Celsius: ");
+                inputTemp = scanner.nextDouble();
+                System.out.println("Fahrenheit: " + ((inputTemp * 9/5) + 32));
+                System.out.println("Kelvin: " + (inputTemp + 273.15));
+                break;
+
+            case 2:
+                System.out.print("Enter temperature in Fahrenheit: ");
+                inputTemp = scanner.nextDouble();
+                System.out.println("Celsius: " + ((inputTemp - 32) * 5/9));
+                System.out.println("Kelvin: " + ((inputTemp - 32) * 5/9 + 273.15));
+                break;
+
+            case 3:
+                System.out.print("Enter temperature in Kelvin: ");
+                inputTemp = scanner.nextDouble();
+                System.out.println("Celsius: " + (inputTemp - 273.15));
+                System.out.println("Fahrenheit: " + ((inputTemp - 273.15) * 9/5 + 32));
+                break;
+
+            default:
+                System.out.println(" Invalid choice!");
+        }
+
+        scanner.close();
+    }
+}
+
