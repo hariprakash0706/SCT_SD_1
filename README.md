@@ -35,11 +35,4 @@ This is a  **Java console-based program** that converts temperatures between **C
 ```bash
 javac TemperatureConversion.java
 
-### Technologies Used
-Java (Standard Edition)
 
-Scanner class for user input
-
-Conditionals (switch-case)
-
-Arithmetic operations
