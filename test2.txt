@@ -1,0 +1,11 @@
+Java Project: Temperature Converter
+Author: Hari Prakash
+
+This program converts temperature between Celsius, Fahrenheit, and Kelvin using user input.
+
+Menu-driven logic with switch-case is used.
+Scanner is used for input.
+
+Use 'javac TemperatureConversion.java' to compile and 'java TemperatureConversion' to run.
+
+Version: 1.0
